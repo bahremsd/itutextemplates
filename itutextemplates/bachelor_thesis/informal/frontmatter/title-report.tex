@@ -1,0 +1,76 @@
+\begin{titlepage}
+
+\begin{center}
+
+%% Print the title
+{\makeatletter
+\largetitlestyle\fontsize{45}{45}\selectfont\@title
+\makeatother}
+
+%% Print the subtitle
+{\makeatletter
+\ifdefvoid{\@subtitle}{}{\bigskip\titlestyle\fontsize{20}{20}\selectfont\@subtitle}
+\makeatother}
+
+\bigskip
+\bigskip
+
+by
+
+\bigskip
+\bigskip
+
+%% Print the name of the author
+{\makeatletter
+\largetitlestyle\fontsize{25}{25}\selectfont\@author
+\makeatother}
+
+\bigskip
+\bigskip
+
+%% Print table with names and student numbers
+\setlength\extrarowheight{2pt}
+
+\vspace{3cm}
+
+\begin{tabular}{c}
+    Project Advisor \\\midrule
+    Asst. Prof. XYZ XYZ (Faculty of Science and Letters, ITU) \\
+\end{tabular}
+
+\vspace{1cm}
+
+\begin{tabular}{c}
+    Jury Members \\\midrule
+    ... \\
+    ... \\
+\end{tabular}
+
+\vspace{4cm}
+
+%% Print some more information at the bottom
+\begin{tabular}{ll}
+    Academic Semester: & Spring, 202X - 202X, \\
+    Faculty: & Faculty of Science and Letters\\
+    Thesis Submission Date : & ..., 202X\\
+    Defense Date : & ..., 202X\\
+\end{tabular}
+
+\vspace{1cm}
+
+%% Add a source and description for the cover and optional attribution for the template
+\begin{tabular}{p{15mm}p{10cm}}
+    Cover: & Lorem ipsum dolor sit amet, et quo eripuit oportere\\
+\end{tabular}
+
+\end{center}
+
+
+%% Insert the ITU logo at the bottom of the page
+\begin{tikzpicture}[remember picture, overlay]
+    \node[above=10mm] at (current page.south) {%
+        \includegraphics[width=0.35\linewidth]{structure/structure_figures/itu_black_logo.pdf}
+    };
+\end{tikzpicture}
+
+\end{titlepage}

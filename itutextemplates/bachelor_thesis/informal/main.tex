@@ -1,0 +1,102 @@
+\documentclass{structure/itu-thesis}
+\usepackage[utf8]{inputenc}
+\usepackage{listings,xcolor}
+\usepackage{xcolor}
+\usepackage[scaled=0.9]{DejaVuSansMono}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{commath}
+\usepackage{physics}
+\usepackage{amsmath}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usepackage{bigints}
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+
+%% Setting up the bibliography
+\usepackage{biblatex}
+\addbibresource{report.bib}
+
+%% Additional packages and commands
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\setlist{itemsep=-2pt} % Reducing white space in lists slightly
+\renewcommand{\deg}{\si{\degree}\xspace} % Use \deg easily, everywhere
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Begin of document %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%% Roman page numbering
+\frontmatter
+
+%% Defining the main parameters
+\title{A Title to the Report}
+\subtitle{A Catchy Optional Subtitle \\ that Grabs the Attention}
+\author{Your Full Name}
+
+\input{frontmatter/frontpage}
+\afterpage{\nopagecolor}
+\input{frontmatter/title-report}
+\newgeometry{top=2.81cm, bottom=2.75cm, outer=2.5cm, inner=3.5cm}
+\pagestyle{empty}
+\cleardoublepage 
+
+
+\input{frontmatter/dedication}
+\input{frontmatter/abstract}
+\input{frontmatter/summary}
+\input{frontmatter/preface}
+\tableofcontents
+\listoffigures
+\listoftables
+
+\input{frontmatter/nomenclature}
+
+%% ----------------------------------------------------------------------
+%%    Mainmatter (Arabic page numbering)
+%% ----------------------------------------------------------------------
+
+\mainmatter
+
+\input{mainmatter/chapter-1}
+
+\input{mainmatter/chapter-2}
+\input{mainmatter/chapter-3}
+
+
+
+%% Prevent urls running into margins in bibliography
+\setcounter{biburlnumpenalty}{7000}
+\setcounter{biburllcpenalty}{7000}
+\setcounter{biburlucpenalty}{7000}
+
+%% ----------------------------------------------------------------------
+%%    Appendix (Letters for chapters)
+%% ----------------------------------------------------------------------
+
+\backmatter
+\input{backmatter/appendices/appendix-a}
+\input{backmatter/appendices/appendix-b}
+%\input{appendix/appendix-c} % Create file to add
+
+%% Add bibliography
+\printbibliography[heading=bibintoc,title=References]
+
+\input{backmatter/backpage}
+\end{document}
