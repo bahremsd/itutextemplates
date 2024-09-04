@@ -15,7 +15,7 @@
 
 %% Class is based on the default book class and options will be passed
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{layout/itu-thesis}[23-05-2022 v1.0.0 Istanbul Technical University Thesis Class]
+\ProvidesClass{itu-thesis}[04-09-2024 v1.0.0 Istanbul Technical University Thesis Class]
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{book}}
 \ProcessOptions\relax
