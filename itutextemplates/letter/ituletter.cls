@@ -12,14 +12,26 @@
 % 
 % Please contact bdanis23@ku.edu.tr to report any problems or bugs.
 %
+%The ituletter LaTeX class originates from Nesime Tatbul's "brownletter" class (2003, tatbul@cs.brown.edu), 
+%who adapted it from the letter template for Brown University. We thank Nesime Tatbul for creating this class.
+%
+%This template aims that mails from ITU maintain a high standard of professionalism and clarity. 
+%The "ituletter" class, based on LaTeX's standard letter class, incorporates specific formatting
+%to estatic needs, including custom margins, header and footer settings, and the inclusion of 
+%ITU's logo. It also provides commands to easily add a subject line and format the opening and 
+%closing sections of a letter.
+%
+%The template automatically adjusts the layout to use letter paper size, sets the text width and 
+%height, and positions the header and footer appropriately, making it ideal for official correspondence. 
+%By using this class, ITU faculty and staff generate consistent and polished letters.
+%
+%
+% Please contact bdanis23@ku.edu.tr to report any problems or bugs.
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{ituletter}
 \RequirePackage{graphicx}
-\RequirePackage{epstopdf}
-\RequirePackage{epsfig}
 \RequirePackage{ifthen}
-\DeclareGraphicsExtensions{.eps}
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{letter}}
 \ProcessOptions
@@ -29,10 +41,6 @@
 \newcommand{\@subject}{}
 \newcommand{\subject}[1]{\renewcommand{\@subject}{\subjectname: #1}}
 
-\newboolean{logofound}
-\IfFileExists{brownlogo.eps}
-    {\setboolean{logofound}{true}}
-    {\setboolean{logofound}{false}}
 
 \setlength{\textwidth}{6.875in}
 \setlength{\textheight}{7.0in}
