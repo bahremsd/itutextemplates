@@ -1,17 +1,3 @@
-% Copyright 2003, Nesime Tatbul (tatbul@cs.brown.edu)
-%
-% Notes:
-%
-% 1. This class can be used for creating letters with ITU logo at the
-%    header and HCS department address at the footer (as in standard ITU
-%    letterhead stationery).
-% 2. It is based on the standard Latex document class, letter.cls.
-% 3. Required packages are epsfig.
-% 4. If ITU logo is to be included in the head, then the file
-%    ITU_LOGO.eps must be provided. Otherwise, the logo is omitted.
-% 
-% Please contact bdanis23@ku.edu.tr to report any problems or bugs.
-%
 %The ituletter LaTeX class originates from Nesime Tatbul's "brownletter" class (2003, tatbul@cs.brown.edu), 
 %who adapted it from the letter template for Brown University. We thank Nesime Tatbul for creating this class.
 %
