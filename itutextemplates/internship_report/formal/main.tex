@@ -1,0 +1,429 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This document is an internship report template for Istanbul Technical University (İTÜ), designed to follow the official formatting guidelines for internship reports. It includes sections for student and institution information, a detailed table of contents, and placeholders for report content. The structure is highly customizable to accommodate various fields of study.
+%
+% This template is prepared by Bahrem S. Danis. If you encounter any issues or have questions about using this template, feel free to contact me at bdanis23@ku.edu.tr.
+%
+% The document utilizes various LaTeX packages to adjust formatting, including geometry for page layout, fontspec for setting the main font, and several others to ensure that the document follows the university's standards for academic reports.
+%
+% Usage instructions:
+% - Update the student and institution information on pages 2-3.
+% - Add your internship report content in the provided sections.
+% - Compile the document using a LaTeX editor (e.g., Overleaf, TeXShop) to generate the final PDF.
+%
+% Best of luck with your internship report!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{
+  a4paper,       % Paper Size    is A4 (210 × 297 mm)
+  top=20mm,      % Top margin    is 2.0 cm
+  bottom=20mm,   % Bottom margin is 2.0 cm
+  left=25mm,     % Left   margin is 2.5 cm
+  right=25mm     % Right  margin is 2.5 cm
+}
+\usepackage{sectsty}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{ulem}
+\usepackage{soul}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{titlesec}
+\usepackage{babel}
+%\usepackage[utf8]{inputenc}
+\usepackage{blindtext}
+\usepackage[numbib]{tocbibind}
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{sectsty}
+
+\allsectionsfont{\normalfont\sffamily\bfseries}
+\sectionfont{\fontsize{18pt}{21.6pt}\sffamily\bfseries}
+\subsectionfont{\fontsize{16pt}{19.2pt}\sffamily\bfseries}
+\subsubsectionfont{\fontsize{14pt}{16.8pt}\sffamily\bfseries}
+
+
+
+\renewcommand{\baselinestretch}{1.0}
+\setlength{\parindent}{1cm}
+\setmainfont{Times New Roman}
+\addto\captionsenglish{\renewcommand{\figurename}{Figure}}
+\setlist[1,2,3]{leftmargin=2cm}
+
+\usepackage{tocloft}
+\renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\refname}{REFERENCES}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cfttoctitlefont}{\sffamily\Large\bfseries}
+\setlength{\cftbeforesecskip}{6pt}
+
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\widowpenalty=10000
+\clubpenalty=10000
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Student Information
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\name}{Your Full Name}
+\newcommand{\id}{090XXXXXX}
+\newcommand{\mail}{contact@itu.edu.tr}
+
+
+\begin{document}
+\pagenumbering{gobble}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Cover Page 1: Summary
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+  \centering
+  \underline{\bfseries ISTANBUL TECHNICAL UNIVERSITY} \\
+  \underline{\bfseries Faculty of XXX}
+  \vfill
+      {\bfseries Internship Template Title} \\
+      \vfill
+          {\fontsize{25}{30}\bfseries INTERNSHIP PROGRAM REPORT} \\
+          \vspace{0.4cm}
+          {\bfseries \name} \\
+          {\bfseries \id}
+      \vfill
+  {\bfseries Summer / 20XX}
+  
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cover Page 2: Information About Student, Institution, and Internship
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\centering
+{\bfseries Istanbul Technical University} \\
+\hspace{0.1cm}\\
+{\bfseries Faculty of XXXXX} \\
+\hspace{0.1cm}\\
+{\bfseries INTERNSHIP REPORT} \\[1\baselineskip] \par}
+\begin{minipage}[t]{.3\textwidth}
+  \begin{flushright}
+    Academic Year: \\
+    Internship Term:
+  \end{flushright}
+\end{minipage}%
+\hspace{0.5cm}
+\begin{minipage}[t]{.7\textwidth}
+  2022/2023 \\
+  $\boxtimes$ Summer  $\square$ Spring  $\square$ Fall \\ 
+\end{minipage}
+
+{\centering
+  \textcolor{red}{\bfseries \ul{ Student Information}}
+  \\[1\baselineskip]
+  \par}
+\begin{minipage}[t]{.3\textwidth}
+  \vspace{0pt}
+  \begin{flushright}
+  Name Surname: \\
+  Student ID: \\
+  Department: \\
+  Program: \\ 
+  E-Mail: \\
+  Mobile Phone: \\
+  Pursuing a Double Major?\\[2\baselineskip]
+  In the Graduation Term? \\[1\baselineskip]
+  Taking a class at Summer School? \\
+  \end{flushright}
+\end{minipage}%
+\hspace{0.5cm}
+\begin{minipage}[t]{.7\textwidth}
+  \vspace{0pt}
+  \name\\
+  \id\\
+  Physics Engineering\\
+  100\% English\\
+  \mail\\
+  +90 $($XXX$)$ XXX XXXX \\
+  $\boxtimes$ Yes $($Faculty/Department of DM: XXX$)$ \\
+  $\square$ No \\[1\baselineskip]
+  $\square$ No \\
+  $\boxtimes$ No \\[1\baselineskip]
+  $\square$ No \\
+  $\boxtimes$ No\\
+\end{minipage}
+
+\vspace{75pt}
+
+{\centering
+  \textcolor{red}{\bfseries \ul{Institution Information}}
+  \\[1\baselineskip]
+  \par}
+
+\begin{minipage}[t]{.20\textwidth}
+  \begin{flushright}
+      Company Name: \\
+      Department: \\
+      Web Address: \\
+      PostalAddress:
+  \end{flushright}
+\end{minipage}%
+\hspace{0.5cm}
+\begin{minipage}[t]{.80\textwidth}
+Charley's Chocolate Factory \\
+Chocolate Packaging Department \\ 
+(Çikolata Ambalajı Geliştirme Müdürlüğü) \\
+https://www.example.com\\
+Adress1 \\ Adress2\\
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Cover Page 3: Information About Institution, and Internship
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+    {\centering
+  \textcolor{red}{\bfseries \ul{Authorized Person Information}}
+  \\[1\baselineskip]
+  \par}
+
+\begin{minipage}[t]{.25\textwidth}
+  \begin{flushright}
+      Department: \\
+      Title: \\
+      Name Surname: \\
+      Corporate E-Mail: \\
+      Corporate Phone:
+  \end{flushright}
+\end{minipage}%
+\hspace{0.5cm}
+\begin{minipage}[t]{.75\textwidth}
+  Chocolate Packaging Department \\
+  Owner of the World's Largest Candy Factory  \\
+  Willy Wonka \\
+  willy.wonka@example.com \\
+  +90 XXX XXX XX XX - XXXX \\[2\baselineskip]
+\end{minipage}
+
+\vspace{150pt}
+
+{\centering
+  \textcolor{red}{\bfseries \ul{Internship Work Information}}
+  \\[1\baselineskip]
+  \par}
+
+\begin{minipage}[t]{0.4\textwidth}
+  \begin{flushright}
+    Internship Location: \\[1\baselineskip]
+    Internship Start Date: \\
+    Internship End Date: \\
+    Number of Days Worked: \\
+    During your internship, did you have insurance?
+  \end{flushright}
+\end{minipage}%
+\hspace{0.5cm}
+\begin{minipage}[t]{0.6\textwidth}
+  $\square$ Turkey \\
+  $\boxtimes$ Abroad \\
+  XX.XX.20XX \\
+  XX.XX.20XX \\
+  XX \\
+  $\boxtimes$ Yes, I was insured by İTÜ. \\
+  $\square$ Yes, I was insured by institution. \\
+  $\square$ No, I did my internship abroad. \\
+  $\square$ No.\\
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% REPORT Table of Contents
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\addtocontents{toc}{\protect\setcounter{tocdepth}{-1}} % Don't include TOC page
+\tableofcontents
+\addtocontents{toc}{\protect\setcounter{tocdepth}{5}}  % Include remaining pages
+
+\newpage
+\pagenumbering{arabic}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% REPORT INFORMATION ABOUT THE INSTITUTION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{INFORMATION ABOUT THE INSTITUTION}
+
+\begin{itemize}
+    \item \textbf{Institution Name:} Charley's Chocolate Factory
+    \item  \textbf{Institution Principal Campus Address:} Adress 1
+    \item  \textbf{Institution XXX Campus Address:} Adress 2
+\end{itemize}
+
+\subsection{Institution Overview}
+
+\par
+
+Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.
+
+Ut soluta similique qui nisi ducimus est rerum nemo aut dolorem pariatur ad aliquid ipsum ab eveniet iure et minus internos. Est corporis minima ut dolores iste qui vero inventore rem dicta voluptas. Ut sint amet et nihil eius est laborum exercitationem qui dicta optio qui itaque libero non numquam quisquam aut velit veritatis.\\
+
+\noindent Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.
+
+Ut soluta similique qui nisi ducimus est rerum nemo aut dolorem pariatur ad aliquid ipsum ab eveniet iure et minus internos. Est corporis minima ut dolores iste qui vero inventore rem dicta voluptas. Ut sint amet et nihil eius est laborum exercitationem qui dicta optio qui itaque libero non numquam quisquam aut velit veritatis.
+
+\subsubsection{Location}
+
+Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.
+
+Ut soluta similique qui nisi ducimus est rerum nemo aut dolorem pariatur ad aliquid ipsum ab eveniet iure et minus internos. Est corporis minima ut dolores iste qui vero inventore rem dicta voluptas. Ut sint amet et nihil eius est laborum exercitationem qui dicta optio qui itaque libero non numquam quisquam aut velit veritatis.\\
+
+\noindent Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.
+
+Ut soluta similique qui nisi ducimus est rerum nemo aut dolorem pariatur ad aliquid ipsum ab eveniet iure et minus internos. Est corporis minima ut dolores iste qui vero inventore rem dicta voluptas. Ut sint amet et nihil eius est laborum exercitationem qui dicta optio qui itaque libero non numquam quisquam aut velit veritatis.\\
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.8\linewidth]{figures/itu_example_photo.jpg}
+\caption{Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci.}
+\end{figure}
+
+\subsubsection{Historical Background and Responsibilities}
+
+Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.\\
+
+\noindent Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.
+
+Ut soluta similique qui nisi ducimus est rerum nemo aut dolorem pariatur ad aliquid ipsum ab eveniet iure et minus internos. Est corporis minima ut dolores iste qui vero inventore rem dicta voluptas. Ut sint amet et nihil eius est laborum exercitationem qui dicta optio qui itaque libero non numquam quisquam aut velit veritatis.\\
+
+\noindent Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.
+
+Ut soluta similique qui nisi ducimus est rerum nemo aut dolorem pariatur ad aliquid ipsum ab eveniet iure et minus internos. Est corporis minima ut dolores iste qui vero inventore rem dicta voluptas. Ut sint amet et nihil eius est laborum exercitationem qui dicta optio qui itaque libero non numquam quisquam aut velit veritatis.\\
+
+\noindent Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.
+
+Ut soluta similique qui nisi ducimus est rerum nemo aut dolorem pariatur ad aliquid ipsum ab eveniet iure et minus internos. Est corporis minima ut dolores iste qui vero inventore rem dicta voluptas. Ut sint amet et nihil eius est laborum exercitationem qui dicta optio qui itaque libero non numquam quisquam aut velit veritatis.\\
+
+\noindent Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.
+
+Ut soluta similique qui nisi ducimus est rerum nemo aut dolorem pariatur ad aliquid ipsum ab eveniet iure et minus internos. Est corporis minima ut dolores iste qui vero inventore rem dicta voluptas. Ut sint amet et nihil eius est laborum exercitationem qui dicta optio qui itaque libero non numquam quisquam aut velit veritatis.\\
+
+\subsubsection{Organizational Structure}
+
+Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.\\
+
+\noindent Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.
+
+Ut soluta similique qui nisi ducimus est rerum nemo aut dolorem pariatur ad aliquid ipsum ab eveniet iure et minus internos. Est corporis minima ut dolores iste qui vero inventore rem dicta voluptas. Ut sint amet et nihil eius est laborum exercitationem qui dicta optio qui itaque libero non numquam quisquam aut velit veritatis.
+
+\subsection{Area of Activity and Projects}
+
+Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.
+
+Ut soluta similique qui nisi ducimus est rerum nemo aut dolorem pariatur ad aliquid ipsum ab eveniet iure et minus internos. Est corporis minima ut dolores iste qui vero inventore rem dicta voluptas. Ut sint amet et nihil eius est laborum exercitationem qui dicta optio qui itaque libero non numquam quisquam aut velit veritatis.\\
+
+\noindent Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.
+
+Ut soluta similique qui nisi ducimus est rerum nemo aut dolorem pariatur ad aliquid ipsum ab eveniet iure et minus internos. Est corporis minima ut dolores iste qui vero inventore rem dicta voluptas. Ut sint amet et nihil eius est laborum exercitationem qui dicta optio qui itaque libero non numquam quisquam aut velit veritatis.\\
+
+
+\subsection{Methods and Approaches}
+
+Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.\\
+
+\noindent Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.
+
+Ut soluta similique qui nisi ducimus est rerum nemo aut dolorem pariatur ad aliquid ipsum ab eveniet iure et minus internos. Est corporis minima ut dolores iste qui vero inventore rem dicta voluptas. Ut sint amet et nihil eius est laborum exercitationem qui dicta optio qui itaque libero non numquam quisquam aut velit veritatis.\\
+
+\subsection{Role of Internship Work}
+
+Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.\\
+
+\noindent Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.
+
+Ut soluta similique qui nisi ducimus est rerum nemo aut dolorem pariatur ad aliquid ipsum ab eveniet iure et minus internos. Est corporis minima ut dolores iste qui vero inventore rem dicta voluptas. Ut sint amet et nihil eius est laborum exercitationem qui dicta optio qui itaque libero non numquam quisquam aut velit veritatis.\\
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% REPORT INTRODUCTION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{INTRODUCTION}
+
+Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.
+
+Ut soluta similique qui nisi ducimus est rerum nemo aut dolorem pariatur ad aliquid ipsum ab eveniet iure et minus internos. Est corporis minima ut dolores iste qui vero inventore rem dicta voluptas. Ut sint amet et nihil eius est laborum exercitationem qui dicta optio qui itaque libero non numquam quisquam aut velit veritatis.\\
+
+\noindent Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.
+
+Ut soluta similique qui nisi ducimus est rerum nemo aut dolorem pariatur ad aliquid ipsum ab eveniet iure et minus internos. Est corporis minima ut dolores iste qui vero inventore rem dicta voluptas. Ut sint amet et nihil eius est laborum exercitationem qui dicta optio qui itaque libero non numquam quisquam aut velit veritatis.
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% REPORT DESCRIPTION AND ANALYSIS OF THE INTERNSHIP PROJECT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{DESCRIPTION AND ANALYSIS OF THE INTERNSHIP PROJECT}
+
+\subsection{Lorem ipsum dolor sit amet.}
+\subsubsection{Lorem ipsum dolor sit amet.}
+
+Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.
+
+Ut soluta similique qui nisi ducimus est rerum nemo aut dolorem pariatur ad aliquid ipsum ab eveniet iure et minus internos. Est corporis minima ut dolores iste qui vero inventore rem dicta voluptas. Ut sint amet et nihil eius est laborum exercitationem qui dicta optio qui itaque libero non numquam quisquam aut velit veritatis.\\
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% REPORT CONCLUSIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{CONCLUSIONS}
+
+Lorem ipsum dolor sit amet. Et vero perferendis hic mollitia saepe est rerum sequi quo architecto nobis qui quia adipisci. Ut officiis repudiandae ut doloremque iusto eos maiores quisquam vel provident illum? Non fugit repudiandae ut iste iure nam odit veniam id provident unde sit molestiae repudiandae qui expedita incidunt qui placeat rerum.
+
+Ut soluta similique qui nisi ducimus est rerum nemo aut dolorem pariatur ad aliquid ipsum ab eveniet iure et minus internos. Est corporis minima ut dolores iste qui vero inventore rem dicta voluptas. Ut sint amet et nihil eius est laborum exercitationem qui dicta optio qui itaque libero non numquam quisquam aut velit veritatis.
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% REPORT REFERNCES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{IEEEtran}
+\begin{thebibliography}{00}
+
+\bibitem{reference 1}
+Lorem ipsum dolor sit amet. Ut expedita Quis eos placeat repudiandae sit vero autem ut autem dolores. 
+\url{https://www.example.org}
+[Accessed XX-XX-20XX]
+
+\bibitem{reference 2}
+Lorem ipsum dolor sit amet. Ut expedita Quis eos placeat repudiandae sit vero autem ut autem dolores. 
+\url{https://www.example.org}
+[Accessed XX-XX-20XX]
+
+\bibitem{reference 3}
+Lorem ipsum dolor sit amet. Ut expedita Quis eos placeat repudiandae sit vero autem ut autem dolores. 
+\url{https://www.example.org}
+[Accessed XX-XX-20XX]
+
+\bibitem{reference 4}
+Lorem ipsum dolor sit amet. Ut expedita Quis eos placeat repudiandae sit vero autem ut autem dolores. 
+\url{https://www.example.org}
+[Accessed XX-XX-20XX]
+
+
+\end{thebibliography}
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% REPORT APPENDIX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{APPENDIX}
+
+\subsection{Appendix A}
+
+Lorem ipsum dolor sit amet. Ut expedita Quis eos placeat repudiandae sit vero autem ut autem dolores. Eos maxime fugiat et voluptatibus mollitia ut unde voluptatem eos illo labore. Ut dolores atque aut possimus molestias aut optio nemo eum quia nisi et officiis laboriosam.
+
+In facere natus et doloremque incidunt eum repellat corporis et corporis illo! Qui officiis totam sit accusamus suscipit ut vero laborum sit minima porro. A asperiores adipisci non obcaecati numquam vel voluptas voluptatum hic minus dignissimos in culpa quasi non quibusdam minima eum enim exercitationem.
+
+Et quam odit aut voluptatum dolores qui temporibus totam. Aut possimus nihil eos labore consequatur a ratione explicabo et ducimus placeat ut modi iusto. Ut labore omnis in dolorem aperiam non expedita quasi ad quis voluptatum nam ipsum reiciendis. 33 ducimus cupiditate quo reprehenderit dolor in error rerum!
+
+\newpage
+
+\subsection{Appendix B}
+
+Est similique reiciendis est galisum enim sed distinctio tempore sed minima voluptatum ut quas esse qui dolorem cupiditate. 33 consequuntur maiores id adipisci consectetur et illum blanditiis et dolores assumenda id nemo sunt et consequuntur nulla id suscipit laborum. Sed praesentium assumenda et dolores nobis et natus placeat cum voluptate rerum est voluptatem quidem aut sunt deserunt. Ut laborum officia cum aspernatur totam qui rerum voluptatem eos molestias maxime sed cumque molestias aut officiis aspernatur.
+
+Qui itaque quia ut quia accusamus sit fugit ratione eos autem quidem qui earum quod. Aut vero labore qui odio earum eos delectus repellat.
+
+Ut debitis omnis est optio fugit est quia rerum. Et neque Quis ab error veniam in adipisci aliquam et ratione reprehenderit eum necessitatibus facilis est quisquam voluptas! Non illum voluptates et laudantium modi ea incidunt itaque.
+
+\end{document}
