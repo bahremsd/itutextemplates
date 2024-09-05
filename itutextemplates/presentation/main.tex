@@ -1,0 +1,164 @@
+% --------------------------------------------------------------
+% Istanbul Technical University Presentation Template
+%
+% Hello! This is a Beamer presentation template specifically 
+% designed for presentations at Istanbul Technical University. 
+% I have set up a basic structure that you can easily modify 
+% for your needs, including sections for title, contents, 
+% introduction, conclusion, and acknowledgments.
+%
+% You can reach out to me if you encounter any issues or 
+% have any questions regarding the template. 
+%
+% Author: Bahrem S. Danis
+% Date: September 5, 2024
+% Email: bdanis23@ku.edu.tr
+% GitHub: https://github.com/bahremsd
+%
+% Best of luck with your presentation!
+% --------------------------------------------------------------
+
+\documentclass[10t]{beamer}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{animate}
+\usepackage{hyperref}
+\usepackage[export]{adjustbox}
+\usepackage{commath}
+\usepackage[pro]{fontawesome5}
+\usepackage{biblatex}
+\addbibresource{presentation.bib}
+
+\usetheme{Warsaw}
+%Information to be included in the title page:
+\title{Your Frist Title for Presentation Template}
+\subtitle{Your Second Title for Presentation Template}
+\author{Your Full Name}
+\institute{\href{https://www.itu.edu.tr/en}{Istanbul Technical University}}
+
+\date{August XX, 20XX}
+\titlegraphic{
+\begin{center}
+
+\includegraphics[height=1.7cm,valign=c]{structure/itu_logo_black.pdf} 
+\end{center}}
+
+\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}
+{%
+  \leavevmode%
+  \hbox{\begin{beamercolorbox}[wd=.22\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fill,rightskip=.3cm]{author in head/foot}%
+    \usebeamerfont{author in foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.78\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\inserttitle
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{document}
+\captionsetup{justification=centering}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Contents}
+\tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}
+\frametitle{Introduction}
+
+Lorem ipsum dolor sit amet. Ea deserunt error vel consequuntur dicta 33 explicabo dicta? Eos culpa nostrum sed itaque debitis non velit eveniet sed recusandae tenetur qui quod voluptatem qui voluptatem perferendis. Et nisi animi sit nobis tempora quo voluptatem asperiores eos dolorum illum nam consequuntur corrupti eos nihil minima et velit placeat!
+
+Est officiis veniam quo officia unde sed cumque iste. In quam nulla ea quia blanditiis ut doloribus natus qui obcaecati autem et placeat iste sit optio quam. Eum iure reiciendis et nesciunt assumenda sed dolores unde eum similique incidunt aut error internos id commodi error sit necessitatibus molestiae.
+
+\end{frame}
+
+\begin{frame}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\textwidth]{figures/itu_example_photo.jpg}
+\caption{Good Maçka Example Photo}
+\end{figure}
+    
+\end{frame}
+
+
+\subsection{Subsection of Introduction}
+
+\begin{frame}{Subsection of Introduction}
+\begin{columns}
+% Column 1
+\begin{column}{0.5\textwidth}
+Ut voluptate veritatis aut sint rerum et natus dignissimos ex omnis animi ad iusto optio quo perspiciatis blanditiis non iste ratione. Sed internos dicta et laborum quas aut velit architecto qui optio repellendus At necessitatibus culpa et blanditiis quae qui magnam aliquid. Vel nobis error in dolorem cupiditate ea obcaecati officia ea dolores repudiandae.
+
+\end{column}
+% Column 2    
+\begin{column}{0.5\textwidth}
+Qui maxime incidunt ea nobis libero non sint Quis. Est culpa tempore qui numquam voluptatem eos enim explicabo? A explicabo sunt qui voluptate autem est omnis doloremque est similique voluptatum aut maiores suscipit vel sint aliquam. Et porro quia At voluptas laboriosam aut maiores nostrum ut cupiditate sint quo omnis inventore et numquam autem?
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\section{Conclusion}
+
+\begin{frame}{Conclusion}
+\begin{block}{}
+\begin{itemize}
+    \item Et provident recusandae non velit modi et beatae neque.
+    \item Ex nisi eveniet ea libero adipisci hic officiis consequuntur in quod accusamus et quas temporibus non mollitia reprehenderit et dolores corporis.
+    \item Nam corrupti repudiandae est molestiae molestias non aliquid quam rem aperiam.
+    \item Numerous resources were also used to prepare the presentation. \cite{agrawal2020app} \cite{agrawal2012nonlinear} \cite{becker1999erbium} \cite{chkalov_butterfly} \cite{desurvire2002erbium} \cite{digonnet2001rare} \cite{giles1991} \cite{paschotta2010field} \cite{petersen1991} \cite{premaratne_agrawal_2011} \cite{teardownofbutterfly} \cite{thorlabs}
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}{TUBITAK National Metrology Institute Internship Report}
+\begin{columns}
+% Column 1
+\begin{column}{0.4\textwidth}
+\begin{center}
+    \texttt{bdanis23@ku.edu.tr} or\\
+    Github: \href{https://github.com/bahremsd}{\faGithub}
+\end{center}
+\end{column}
+% Column 2    
+\begin{column}{0.6\textwidth}
+
+Et provident recusandae non velit modi et beatae neque. A voluptatem quod ut consequatur deserunt quo eligendi minus. Ex nisi eveniet ea libero adipisci hic officiis consequuntur in quod accusamus et quas temporibus non mollitia reprehenderit et dolores corporis. Nam corrupti repudiandae est molestiae molestias non aliquid quam rem aperiam expedita ut perspiciatis voluptates cum consequatur voluptates.
+
+\end{column}
+\end{columns} 
+\end{frame}
+
+\section*{Acknowledgement}  
+\begin{frame}
+\frametitle{Acknowledgement}
+Et provident recusandae non velit modi et beatae neque. A voluptatem quod ut consequatur deserunt quo eligendi minus. Ex nisi eveniet ea libero adipisci hic officiis consequuntur in quod accusamus et quas temporibus non mollitia reprehenderit et dolores corporis. Nam corrupti repudiandae est molestiae molestias non aliquid quam rem aperiam expedita ut perspiciatis voluptates cum consequatur voluptates.
+\end{frame}
+
+\section*{Bibliographie}
+\begin{frame}[t,allowframebreaks]
+\frametitle{Bibliographie}
+\printbibliography
+\end{frame}
+
+\end{document}
