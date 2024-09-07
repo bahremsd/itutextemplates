@@ -12,13 +12,13 @@
 
 ## Letter
 
-|  Letter     |
+|    |
 :----------------:
 ![image](readme_pics/letter/letter.png)
 
 ## Lab Report
 
-|  Lab Report     |
+|    |
 :----------------:
 ![image](readme_pics/lab_report/report.png)
 
