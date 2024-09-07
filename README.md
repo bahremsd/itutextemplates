@@ -51,6 +51,19 @@ To use the template, simply modify the `main.tex` file directly.
 
 ## Lab Report
 
+I created this LaTeX template to help ITU students structure their lab reports more effectively. Although the template is primarily designed for pre-reports, students can easily add new pages to extend it and create longer post-lab reports. This flexibility makes it suitable for various stages of lab report writing.
+
+This template includes sections such as:
+
+* Theory
+* Aim of the Experiment
+* Performing the Experiment
+* Results of the Experiment
+
+
+To use the template, simply modify the main.tex file directly to fit your needs.
+
+
 |  Lab Report     |
 :----------------:
 ![image](readme_pics/lab_report/report.png)
