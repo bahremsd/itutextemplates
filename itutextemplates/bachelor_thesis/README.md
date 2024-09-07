@@ -21,11 +21,14 @@ Changing the cover photo in this template is a simple process. Follow these step
 :----------------:|:---------------------:
 ![image](../../readme_pics/bachelor_thesis/cover.png) | ![image](../../readme_pics/bachelor_thesis/cover2.png)
 
+|                 |                      |
 :----------------:|:---------------------:
 ![image](../../readme_pics/bachelor_thesis/cover3.png) | ![image](../../readme_pics/bachelor_thesis/cover4.png)
 
+|                 |                      |
 :----------------:|:---------------------:
 ![image](../../readme_pics/bachelor_thesis/cover5.png) | ![image](../../readme_pics/bachelor_thesis/cover6.png)
 
+|                 |                      |
 :----------------:|:---------------------:
 ![image](../../readme_pics/bachelor_thesis/cover7.png) | ![image](../../readme_pics/bachelor_thesis/cover8.png)
