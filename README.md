@@ -36,6 +36,6 @@
 
 ## Internship Report
 
-|   Cover  |  Chapter 1 |  Appendix - A |
+|   Cover  |  Table of Contents |  Appendix - A |
 :----------------:|----------------:|:---------------------:
 ![](readme_pics/internship_report/cover.png) | ![](readme_pics/internship_report/table_of_contents.png) | ![](readme_pics/internship_report/chapter1.png)
