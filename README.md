@@ -108,4 +108,7 @@ To use the template, simply modify the `main.tex` file directly.
 
 If you use or reference any of the templates provided in this repository, please cite it as follows:
 
+
+```bibtex
 @misc{itutextemplates, author = {Bahrem Serhat Daniş}, title = {Istanbul Technical University LaTeX Templates}, year = {2024}, url = {https://github.com/bahremsd/itutextemplates}, note = {This repository contains LaTeX templates for Istanbul Technical University, including theses, assignments, emails, and slides.} }
+```
