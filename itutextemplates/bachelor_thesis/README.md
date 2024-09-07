@@ -17,7 +17,7 @@ Changing the cover photo in this template is a simple process. Follow these step
 	```bash
 	{\includegraphics[height=18.9cm, keepaspectratio]{structure/structure_figures/your_new_photo.jpg}};
 	```
-| Alternatives |
+|                 |                      |
 :----------------:|:---------------------:
 ![image](../../readme_pics/bachelor_thesis/cover.png) | ![image](../../readme_pics/bachelor_thesis/cover2.png)
 
