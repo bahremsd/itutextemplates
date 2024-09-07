@@ -12,20 +12,17 @@
 
 ## Letter
 
-|    |
-:----------------:
+
 ![image](readme_pics/letter/letter.png)
 
 ## Lab Report
 
-|    |
-:----------------:
+
 ![image](readme_pics/lab_report/report.png)
 
 ## Presentation
 
-|  Cover     |
-:----------------:
+
 ![image](readme_pics/presentation/cover.png)
 
 ## Homework
