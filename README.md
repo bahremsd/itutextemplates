@@ -1,4 +1,4 @@
-# Istanbul Technical University Tex Templates
+# Istanbul Technical University LaTeX Templates
 
 ## Bachelor Thesis
 
@@ -35,3 +35,7 @@
 ![](readme_pics/homework/cover.png) | ![](readme_pics/homework/inside.png)
 
 ## Internship Report
+
+|   Cover  |  Chapter 1 |  Appendix - A |
+:----------------:|----------------:|:---------------------:
+![](readme_pics/internship_report/cover.png) | ![](readme_pics/internship_report/table_of_contents.png) | ![](readme_pics/internship_report/chapter1.png)
