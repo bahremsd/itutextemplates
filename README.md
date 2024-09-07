@@ -8,7 +8,7 @@
 
 |   Prelude  |  Chapter 1 |  Appendix - A |
 :----------------:|----------------:|:---------------------:
-![](readme_pics/bachelor_thesis/predule.png) | ![](readme_pics/bachelor_thesis/chapter1.png) | ![](readme_pics/bachelor_thesis/appendix.png)
+![](readme_pics/bachelor_thesis/prelude.png) | ![](readme_pics/bachelor_thesis/chapter1.png) | ![](readme_pics/bachelor_thesis/appendix_a.png)
 
 ## Letter
 
