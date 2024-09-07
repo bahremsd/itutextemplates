@@ -11,6 +11,18 @@ All the photos of ITU Campuses used in the templates are sourced from Istanbul T
 
 ## Bachelor Thesis
 
+The goal of this template is to enhance and refine the (Xe)LaTeX template for students who desire a well-designed and aesthetically pleasing thesis format from Istanbul Technical University. By integrating key features from both Zwaneveld's and Nielsen's templates, this version simplifies the formatting process and offers additional improvements to streamline the work for thesis writers. Also, this template is created for senior students at Istanbul Technical University to easily incorporate both mathematical expressions and maintain a modular structured system in their theses. The template is designed to assist students in preparing their thesis with a focus on clarity, organization, and ease of use. ITU students using this template will need to update the “main.tex” file for the core structure of their thesis, as well as fill in the “mainmatter” section for the main content and the “backmatter/appendices” section for any appendices. The additional files provided are intended to support the creation of the template structure.
+
+For those interested in customizing the cover of their thesis, further instructions can be found in the “itutextemplates/bachelor_thesis/README.md” file.
+
+This template combines elements from two existing projects:
+
+*	Daan Zwaneveld's work, which can be found here and is licensed under CC BY-NC 4.0.
+*	Christian Nicolai Nielsen's DTU Thesis template, which is available at DTU Design Guide.
+
+The goal of this template is to enhance and refine the (Xe)LaTeX template for students who desire a well-designed and aesthetically pleasing thesis format from Istanbul Technical University. By integrating key features from both Zwaneveld's and Nielsen's templates, this version simplifies the formatting process and offers additional improvements to streamline the work for thesis writers.
+
+
 | Cover       |  Back Cover |
 :----------------:|:---------------------:
 ![image](readme_pics/bachelor_thesis/cover.png) | ![image](readme_pics/bachelor_thesis/back_cover.png)
