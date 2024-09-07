@@ -61,7 +61,7 @@ This template includes sections such as:
 * Results of the Experiment
 
 
-To use the template, simply modify the main.tex file directly to fit your needs.
+To use the template, simply modify the `main.tex` file directly to fit your needs.
 
 
 |  Lab Report     |
@@ -70,11 +70,19 @@ To use the template, simply modify the main.tex file directly to fit your needs.
 
 ## Presentation
 
+This LaTeX template is specifically designed for creating Beamer presentations at Istanbul Technical University. It provides a basic structure that is easy to customize, with sections for title, contents, introduction, conclusion, and acknowledgments, allowing students to prepare professional and well-organized presentations.
+
+This template was created using the Beamer's Warsaw template, with the only modification being the addition of the ITU logo to align it with ITU’s branding.
+
+To use the template, simply modify the `main.tex` file directly.
+
 |  Cover     |
 :----------------:
 ![image](readme_pics/presentation/cover.png)
 
 ## Homework
+
+
 
 | Cover       |  Inside |
 :----------------:|:---------------------:
