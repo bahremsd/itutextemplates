@@ -1,5 +1,14 @@
 # Istanbul Technical University LaTeX Templates
 
+The purpose of these templates is to provide Istanbul Technical University (ITU) students, from their freshman year to their senior year, with LaTeX resources for preparing their academic documents. These templates ensure that students create more aesthetically pleasing documents while also benefiting from the powerful formatting and collaboration capabilities that LaTeX offers.
+
+
+Using LaTeX promotes consistency, professionalism, and ease of use across various types of documents. It not only helps students present their work in a visually appealing manner but also makes writing assignments, reports, and theses more collaborative and structured. 
+
+
+All the photos of ITU Campuses used in the templates are sourced from Istanbul Technical University's official Twitter account. According to the ITU Twitter account, the photographers credited for these pictures are ITU Social Media Staff, Ahmet Sadi Öcal, Begüm Karataş, and Siraç Uzuntok.
+
+
 ## Bachelor Thesis
 
 | Cover       |  Back Cover |
