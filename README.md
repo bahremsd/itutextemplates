@@ -82,13 +82,23 @@ To use the template, simply modify the `main.tex` file directly.
 
 ## Homework
 
+This LaTeX template is designed to help ITU students organize their homework submissions in a professional and structured manner. It provides an easy-to-read layout for mathematical computations, problem-solving, and various scientific notations, making it ideal for technical assignments.
+
+The template includes sections dedicated to each problem and its solution, as well as a title page for clear and concise presentation.
+
+To use the template, simply modify the `main.tex` file directly.
 
 
 | Cover       |  Inside |
 :----------------:|:---------------------:
 ![image](readme_pics/homework/cover.png) | ![image](readme_pics/homework/inside.png)
 
+
 ## Internship Report
+
+This document is an internship report template for Istanbul Technical University (ITU), designed to follow the official formatting guidelines for internship reports. It includes sections for student and institution information, a detailed table of contents, and placeholders for the report content. The structure is highly customizable to accommodate various fields of study.
+
+To use the template, simply modify the `main.tex` file directly.
 
 |   Cover  |  Table of Contents |  Appendix - A |
 :----------------:|----------------:|:---------------------:
