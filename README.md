@@ -17,7 +17,7 @@ For those interested in customizing the cover of their thesis, further instructi
 
 This template combines elements from two existing projects:
 
-*	Daan Zwaneveld's work, which can be found here](https://dzwaneveld.github.io) and is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+*	Daan Zwaneveld's work, which can be found [here](https://dzwaneveld.github.io) and is licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 *	Christian Nicolai Nielsen's DTU Thesis template, which is available at [DTU Design Guide](https://www.designguide.dtu.dk).
 
 The goal of this template is to enhance and refine the (Xe)LaTeX template for students who desire a well-designed and aesthetically pleasing thesis format from Istanbul Technical University. By integrating key features from both Zwaneveld's and Nielsen's templates, this version simplifies the formatting process and offers additional improvements to streamline the work for thesis writers.
