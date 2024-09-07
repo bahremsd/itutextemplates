@@ -11,7 +11,7 @@ All the photos of ITU Campuses used in the templates are sourced from Istanbul T
 
 ## Bachelor Thesis
 
-The goal of this template is to enhance and refine the (Xe)LaTeX template for students who desire a well-designed and aesthetically pleasing thesis format from Istanbul Technical University. By integrating key features from both Zwaneveld's and Nielsen's templates, this version simplifies the formatting process and offers additional improvements to streamline the work for thesis writers. Also, this template is created for senior students at Istanbul Technical University to easily incorporate both mathematical expressions and maintain a modular structured system in their theses. The template is designed to assist students in preparing their thesis with a focus on clarity, organization, and ease of use. ITU students using this template will need to update the “main.tex” file for the core structure of their thesis, as well as fill in the `mainmatter` section for the main content and the `backmatter/appendices` section for any appendices. The additional files provided are intended to support the creation of the template structure.
+The goal of this template is to enhance and refine the (Xe)LaTeX template for students who desire a well-designed and aesthetically pleasing thesis format from Istanbul Technical University. By integrating key features from both Zwaneveld's and Nielsen's templates, this version simplifies the formatting process and offers additional improvements to streamline the work for thesis writers. Also, this template is created for senior students at Istanbul Technical University to easily incorporate both mathematical expressions and maintain a modular structured system in their theses. The template is designed to assist students in preparing their thesis with a focus on clarity, organization, and ease of use. ITU students using this template will need to update the `main.tex` file for the core structure of their thesis, as well as fill in the `mainmatter` folder for the main content and the `backmatter/appendices` folder for any appendices. The additional files provided are intended to support the creation of the template structure.
 
 For those interested in customizing the cover of their thesis, further instructions can be found in the `itutextemplates/bachelor_thesis/README.md` file.
 
@@ -32,6 +32,18 @@ The goal of this template is to enhance and refine the (Xe)LaTeX template for st
 ![image](readme_pics/bachelor_thesis/prelude.png) | ![image](readme_pics/bachelor_thesis/chapter1.png) | ![image](readme_pics/bachelor_thesis/appendix_a.png)
 
 ## Letter
+
+I created this LaTeX template for ITU students who need to send formal emails or letters to official institutions. Additionally, ITU clubs can use this template when applying for event approvals. The `ituletter` LaTeX class is derived from Nesime Tatbul's `brownletter` class (2003, tatbul@cs.brown.edu), which was originally designed for Brown University. I extend my thanks to Nesime Tatbul for developing this class.
+
+
+This template is designed to ensure that correspondence from ITU students, faculty, and staff upholds a high standard of professionalism and clarity. The `ituletter` class, built on LaTeX's standard letter class, introduces specific formatting tailored to ITU's aesthetic needs. Key features include custom margins, header and footer settings, and the integration of ITU’s logo. The template also provides commands for easily adding a subject line and formatting the opening and closing sections of the letter.
+
+
+The layout is automatically adjusted to fit letter paper size, with predefined text width, height, and header/footer placement, making it ideal for official communication. By using this class, ITU students, faculty, and staff can create consistent, polished letters for any formal purpose.
+
+
+To use the template, simply modify the `main.tex` file directly.
+
 
 |  Letter     |
 :----------------:
